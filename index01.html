@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <img src="./images/bg-main-desktop.png" class="bg" />
+
+        <div class="left">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+
+        <div class="right">
+            <form action="main.html" class="form">
+                <p>CERTIFICATEHOLDER NAME</p>
+                <input
+                    type="text"
+                    placeholder="e.g. Jane Appleseed"
+                    class="name"
+                />
+
+                <div class="bottom-inputs">
+                    <div class="bottom-left">
+                        <p>EXP. DATE (MM/YY)</p>
+                        <div class="inputs">
+                            <input type="text" placeholder="MM" class="mm" />
+                            <input type="text" placeholder="YY" class="yy" />
+                        </div>
+                        <p class="error error2 hidden">
+                            Can't be blank or invalid
+                        </p>
+                    </div>
+
+                    <div class="bottom-right">
+                        <p>CVC</p>
+                        <input type="text" placeholder="e.g. 123" class="cvc" />
+                        <p class="error error3 hidden">
+                            Can't be blank or invalid
+                        </p>
+                    </div>
+                </div>
+
+                <input type="submit" value="Confirm" class="btn" />
+            </form>
+        </div>
+
+        <script src="script0.js"></script>
+    </body>
+</html>
