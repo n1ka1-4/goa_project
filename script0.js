@@ -1,6 +1,5 @@
 const mm = document.querySelector(".mm");
 const yy = document.querySelector(".yy");
-const cvc = document.querySelector(".cvc");
 const error2 = document.querySelector(".error2");
 const error3 = document.querySelector(".error3");
 const submit = document.querySelector(".btn");
@@ -18,16 +17,6 @@ mm.addEventListener("input", function () {
 
 yy.addEventListener("input", function () {
     validateMMYY();
-});
-
-cvc.addEventListener("input", function () {
-    if (cvc.value.length === 0 || !isdigit(cvc.value)) {
-        cvc.style.outline = "2px solid hsl(0, 100%, 66%)";
-        error3.classList.remove("hidden");
-    } else {
-        cvc.style.outline = "";
-        error3.classList.add("hidden");
-    }
 });
 
 function validateMMYY() {
